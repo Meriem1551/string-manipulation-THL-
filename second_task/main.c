@@ -6,6 +6,8 @@ int isValid(char s[], int size)
 
     while (s[i] != '\0')
     {
+        if (s[i] == ')')
+            return 0;
         if (s[i] == '(')
             j++;
         else if (s[i] == ')')
