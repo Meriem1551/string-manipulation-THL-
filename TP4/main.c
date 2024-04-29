@@ -18,7 +18,7 @@ bool is_final(int s)
 void test_det()
 {
     int i = 0, s = 0, car;
-    int b = 1;
+    bool b = true;
 
     while (i < strlen(c) && b == true)
     {
@@ -30,7 +30,7 @@ void test_det()
         {
             s = trans[s][car];
             if (s == -1)
-                b = 0;
+                b = false;
         }
         i++;
     }
